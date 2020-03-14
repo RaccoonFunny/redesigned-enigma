@@ -15,9 +15,9 @@
 	"start_url" : "redesigned-enigma/public_html/index.html",
 	"background_color" : "transparent",
 	"display" : "minimal-ui",
-	"scope" : "./",
+	"scope" : "/",
 	"theme_color" : "#3367D6",
-	"url" : "./",
+	"url" : "/",
 	"screenshots" : [],
 	"generated" : ""
 }
