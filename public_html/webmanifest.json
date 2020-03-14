@@ -5,11 +5,11 @@
 	"description" : "just example of my power",
 	"icons" : [
 		{
-			"src": "PWA thing/MyLove192px.png",
+			"src": "/PWA thing/MyLove192px.png",
 			"sizes": "192x192"
 		},
 		{
-			"src": "PWA thing/MyLove 512px.png",
+			"src": "/PWA thing/MyLove 512px.png",
 			"sizes": "512x512"
 		}],
 	"start_url" : "redesigned-enigma/public_html/index.html",
