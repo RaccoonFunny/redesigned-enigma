@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+    <link rel='manifest' href='/webmanifest.webmanifest'>
+    <link rel='manifest' href='/webmanifest.json'>
+    <meta charset="utf-8">
+    <meta name="Description" content="Simple PWA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>simple PWA</title>
+    <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js')
+         .then(() => navigator.serviceWorker.ready.then((worker) => {
+            worker.sync.register('syncdata');
+          }))
+          .catch((err) => console.log(err));
+}     
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="baner">
+        <div class="text">
+          <h2>Ты в моей жизни...</h2>
+          <p>Занимаешь отдельное местечко не только в сердце, но и в душе, я не могу сказать что это маленькая привязвнность - это уже сильная зависимость, от объятий, прогулок до вечера, походов за синабонами с тобой и только тобой.
+            <br>
+            Ты и я уже как почти полтора года вместе и мне очень дороги эти минуты и часы, которые я провёл с тобой.
+          </p>
+        </div>
+        <div class="img">
+            <img src="img\favourite.png" alt="Ты и я валяемся и ничего не делаем, просто отдыхаем).png">
+        </div>
+      </div>
+
+      <div class="largeText">
+        <p>
+          Мы с тобой через многое прошли, начиная от вражды заканчивая долгими расставаниями, но ни одно из наших расставаний не было столь долгим как это.
+          <br>
+          Это расставание самое сложное как для нас, так и для меня в частности, ведь на меня взвалилаь важная задача
+          <span class="deth">не умереть и не упасть духом</span>
+          самостоятельно вырасти как личность и сделать так, чтоб твой приезд был максимально комфортным.
+          <br>
+          <span class="fear">
+            Мне даже сейчас очень тебя не хватает, я всё время боюсь, что мы пробудем слишком много времени и сильно изменимся, о том, что я не смогу оправдать твои ожидания, или как лучше сказать: свои ожидания.
+            Мне очень страшно. Но я стараюсь быть хоть чуть более оптимистичным  верить в то что всё будет хоршо, главное стараться и не опускать руки.
+          </span>
+          <!-- <br> -->
+          a ещё знаешь что?
+        </p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="front">
+            <h2>Я</h2>
+          </div>
+          <div class="back"></div>
+        </div>
+        <div class="card">
+          <div class="front">
+          <h2>тебя</h2>
+          </div>
+          <div class="back"></div>
+        </div>
+        <div class="card">
+          <div class="front">
+          <h2>Люблю</h2>
+          </div>
+          <div class="back"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
