@@ -12,7 +12,7 @@
 			"src": "PWA thing/MyLove 512px.png",
 			"sizes": "512x512"
 		}],
-	"start_url" : "https://raccoonfunny.github.io/redesigned-enigma/",
+	"start_url" : "/",
 	"background_color" : "transparent",
 	"display" : "minimal-ui",
 	"scope" : "/",
