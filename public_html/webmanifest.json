@@ -12,12 +12,12 @@
 			"src": "PWA thing/MyLove 512px.png",
 			"sizes": "512x512"
 		}],
-	"start_url" : "/",
+	"start_url" : "./",
 	"background_color" : "transparent",
 	"display" : "minimal-ui",
-	"scope" : "/",
+	"scope" : "./",
 	"theme_color" : "#3367D6",
-	"url" : "/",
+	"url" : "./",
 	"screenshots" : [],
 	"generated" : ""
 }
