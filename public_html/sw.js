@@ -1,15 +1,5 @@
 self.addEventListener('install', (event) => {
     console.log('Установлен');
-    event.waitUntil(
-   caches.open('video-store').then(function(cache) {
-     return cache.addAll([
-       '/',
-       '/index.html',
-       '/style/master.css',
-       '/img/favourite.png'
-     ]);
-   })
- );
 });
 
 self.addEventListener('activate', (event) => {
