@@ -1,17 +1,6 @@
 self.addEventListener('install', (event) => {
     console.log('Установлен');
-});
-
-self.addEventListener('activate', (event) => {
-    console.log('Активирован');
-});
-
-self.addEventListener('fetch', (event) => {
-    console.log('Происходит запрос на сервер');
-});
-
-self.addEventListener('install', (event) => {
- event.waitUntil(
+    event.waitUntil(
    caches.open('video-store').then(function(cache) {
      return cache.addAll([
        '/',
@@ -21,4 +10,12 @@ self.addEventListener('install', (event) => {
      ]);
    })
  );
+});
+
+self.addEventListener('activate', (event) => {
+    console.log('Активирован');
+});
+
+self.addEventListener('fetch', (event) => {
+    console.log('Происходит запрос на сервер');
 });
