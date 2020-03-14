@@ -5,7 +5,7 @@
 	"description" : "just example of my power",
 	"icons" : [
 		{
-			"src": "/redesigned-enigma/public_html/PWA thingMyLove192px.png",
+			"src": "/redesigned-enigma/public_html/PWA thing/MyLove192px.png",
 			"sizes": "192x192"
 		},
 		{
