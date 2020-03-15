@@ -36,4 +36,5 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 window.addEventListener('appinstalled', (evt) => {
   console.log('a2hs installed');
+  buttonBox.style.display= "none";
 });
