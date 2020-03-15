@@ -14,13 +14,16 @@ self.addEventListener('install', (e)=>{
     );
 });
 
-self.addEventListener('activate',event=>{
+this.addEventListener('activate', function (event) {
     event.waitUntil(
         caches.keys().then(keyList => {
-            if (key.indexOf(CACHE_PREFIX) === 0 && key !== CACHE_NAME){
-                return caches.delite(key);
-            }
-        }));
+            return Promise.all(keyList.map(key => {
+                if (key.indexOf(CACHE_PREFIX) === 0 && key !== CACHE_NAME) {
+                    return caches.delete(key);
+                }
+            }));
+        })
+    );
 });
 
 this.addEventListener('fetch', function (event) {
