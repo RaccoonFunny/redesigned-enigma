@@ -35,20 +35,3 @@ this.addEventListener('fetch', function (event) {
         })
     );
 });
-
-/*this.addEventListener('fetch', function (event) {
-    if (
-        event.request.method !== 'GET' ||
-        event.request.url.indexOf('http://') === 0 ||
-        event.request.url.indexOf('an.yandex.ru') !== -1
-    ) {
-        return;
-    }
-
-    event.respondWith(
-        caches.match(event.request, { ignoreSearch: true }).then(function(response) {
-            return response || fetch(event.request);
-        })
-    );
-});
-*/
