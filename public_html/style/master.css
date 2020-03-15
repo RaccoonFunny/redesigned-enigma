@@ -1,6 +1,5 @@
 .wrapper{
   margin: 0 auto;
-  width: 1250px;
 }
 
 .baner{
@@ -50,4 +49,17 @@ p {
 .card:nth-child(2){
   margin-left: 90px;
   margin-right: 90px;
+}
+
+@media screen and (min-width: 1024x) {
+  .wrapper{
+  width: 1100px;
+  } 
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper{
+    display:flex;
+    flex-direction: colum;
+  } 
 }
