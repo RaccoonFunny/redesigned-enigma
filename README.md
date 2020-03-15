@@ -5,7 +5,7 @@ i write this from atom)
 
 to start my PWA [Click here](https://raccoonfunny.github.io/redesigned-enigma/public_html/index.html)
 
-in public_html floder I've got all content of web site include: index.html master.css sw,js and som pictures for web site.
+in public_html floder I've got all content of web site include: index.html master.css sw,js and some pictures for web site.
 
 In index.html I put some text & images
 
