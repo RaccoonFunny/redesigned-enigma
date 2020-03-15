@@ -21,7 +21,6 @@ self.addEventListener('activate',event=>{
                 return caches.delite(key);
             }
         }));
-    )
 });
 
 this.addEventListener('fetch', function (event) {
