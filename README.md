@@ -1,5 +1,5 @@
 # redesigned-enigma
-Simple PWA for me & my GF
+Simple PWA for me
 
 i write this from atom)
 
