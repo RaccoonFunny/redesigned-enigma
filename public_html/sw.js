@@ -2,7 +2,8 @@ const CASHE_NAME = "WebsiteCash";
 const CACHE_PREFIX = "Cach of My PWA";
 const CACHE_LIST = [
     'img/favourite.png',
-    'index.html'
+    'index.html',
+    'style/master.css'
     ];
 
 self.addEventListener('install', (e)=>{
