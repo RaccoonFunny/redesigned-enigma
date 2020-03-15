@@ -3,7 +3,8 @@ const CACHE_PREFIX = "Cach of My PWA";
 const CACHE_LIST = [
     'img/favourite.png',
     'index.html',
-    'style/master.css'
+    'style/master.css',
+    'script/script.js'
     ];
 
 self.addEventListener('install', (e)=>{

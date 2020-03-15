@@ -7,6 +7,7 @@
     <link rel='manifest' href='webmanifest.webmanifest'>
     <link rel='manifest' href='webmanifest.json'>
     <link rel="apple-touch-icon" href="PWA thing/MyLove192px.ico">
+    <link rel="javascript" href="script/script.js">
     <meta charset="utf-8">
     <meta name="Description" content="Simple PWA">
     <meta name="theme-color" content="#ffffff">
@@ -19,10 +20,14 @@
             worker.sync.register('syncdata');
           }))
           .catch((err) => console.log(err));
-}     
+}
     </script>
   </head>
   <body>
+    <div id="buttonbox">
+      <button type="button" name="exit">Скрыть</button>
+      <button type="button" name="donload">Скачать на устройство</button>
+    </div>
     <div class="wrapper">
       <div class="baner">
         <div class="text">
