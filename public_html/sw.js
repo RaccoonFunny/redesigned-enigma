@@ -32,7 +32,7 @@ this.addEventListener('fetch', function (event) {
     );
 });
 
-this.addEventListener('fetch', function (event) {
+*/this.addEventListener('fetch', function (event) {
     if (
         event.request.method !== 'GET' ||
         event.request.url.indexOf('http://') === 0 ||
@@ -47,3 +47,4 @@ this.addEventListener('fetch', function (event) {
         })
     );
 });
+*/
