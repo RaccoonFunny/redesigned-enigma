@@ -2,8 +2,8 @@ let exit = document.getElementsByName('exit'),
     donload = document.getElementsByName('donload'),
     buttonBox = document.getElementById('buttonbox');
 
-exit.onclick = (event)=>{
-  buttonBox.style.display = none;
-}
+console.log(exit,donload,buttonBox);
 
-console.log(CacheStorage.keys());
+exit.addEventListener("click",(e)=>{
+  buttonBox.style.display= none;
+})
